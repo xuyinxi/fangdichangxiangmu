@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=1200, initial-scale=1, maximum-scale=1, user-scalable=1" name="viewport">
+    <title>麦田房产</title>
+    <link rel="stylesheet" href="_files/base.css">
+
+    <link rel="stylesheet" href="_files/esf_list.css">
+
+    <body>
+        <div style="display:none;">
+        </div>
+        <div class="revealbga" style="display:none">
+            <div class="dezxails clearfix">
+                <p><span tab="0" class="cur_tab">手机短信登录</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span tab="1">已有账号登录</span><kbd><a href="#"><img src="_files/close.jpg" alt=""></a></kbd></p>
+                <form id="thisForm" method="post">
+                    <ul class="FancyF FancyForm3" style="display: block" id="ulMobileVerify">
+                        <li>
+                            <label>请输入手机号码</label>
+                            <span class="fff"></span><input type="text" id="txtLoginMobile" maxlength="11">
+                        </li>
+                        <li id="li1" style="display:block">
+                            <label>请输入图形码</label>
+                            <span class="fff fffw1"></span>
+                            <input type="text" class="inputCode" id="txtVerify" maxlength="4">
+                            <img src="_files/IdentifyingCode.ashx">
+                            <a class="change_img_code">换一组</a>
+                        </li>
+                        <li id="li2" style="display:none">
+                            <label>请输入验证码</label>
+                            <span class="fff fffw1"></span><input type="text" id="txtSMS" maxlength="4">
+                            <button style="z-index:5" class="send_msg" type="button" id="btnSendCode" value="获取验证码">获取验证码</button>
+                        </li>
+                    </ul>
+                    <ul class="FancyF" id="ulMobilePass">
+                        <li class="">
+                            手机号<br><i class="mai-ico"></i><input id="txtLoginName" type="text" maxlength="11" class="stext"
+                                value="">
+                            <label>请输入手机号码</label>
+                            <span class="fff"></span>
+                        </li>
+                        <li class="">
+                            密码<br><i class="mai-ico password"></i><input id="txtPassword" type="password" maxlength="16">
+                            <label>请输入密码</label>
+                            <span class="fff"></span>
+                        </li>
+                        <li>
+                            <dl class="clearfix" style="padding:0;">
+                                <dd class="fl" style="width:120px;"><input style="width:10px;" id="isAutoLogin" type="checkbox">下次自动登录</dd>
+                                <dd class="fr"><a style="line-height:30px;" href="#">找回密码</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </form>
+                <samp><a id="btnLoginBan" href="#">立即登录</a></samp>
+                <div class="goRegist"><label>还没有麦田账号?<a href="#">马上注册</a></label></div>
+
+                <ol>
+                    <li><i></i><a id="btnQQLogin" href="#">QQ登录</a></li>
+                    <li><i class="sina"></i><a id="btnSinaLogin" href="#">新浪微博登录</a></li>
+                </ol>
+            </div>
+        </div>
+
+        <header class="maitian-header">
+            <div class="nav-wrap clearfix">
+                <ul class="fl">
+                    <li class="logo"><a href="#"><img src="_files/logo.png" alt=""></a></li>
+                    <li class="city">
+                        <div class="filter_select clearfix selectBox">
+                            <a href="#" class="show">北京</a>
+                            <div class="filter_sel selectCont mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar" style="overflow: visible;">
+                                <div id="mCSB_1" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" tabindex="0">
+                                    <div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;"
+                                        dir="ltr">
+                                        <ul>
+                                            <li class="active"><a href="#">北京</a></li>
+                                            <li><a id="fzurlA" href="#">福州</a></li>
+                                            <li><a id="xmurlA" href="#">厦门</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal mCSB_scrollTools_vertical" style="display: none;">
+                                    <div class="mCSB_draggerContainer">
+                                        <div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; top: 0px;" oncontextmenu="return false;">
+                                            <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                                        </div>
+                                        <div class="mCSB_draggerRail"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../zhuangxiu.html" id="matianindex">首页
+                </a>
+                    </li>
+                    <li>
+                        <a href="#" class="bg" id="matianesf">二手房
+                </a>
+                    </li>
+                    <li>
+                        <a href="zufang.html" id="matianbs">租房
+                </a>
+                    </li>
+                    <li>
+                        <a href="xiaoqu.html" id="matianxq">小区
+                </a>
+                    </li>
+                    <li>
+                        <a href="fcgw.html" id="matianjjr" style="background:#F78066;">房产顾问
+                </a>
+                    </li>
+                    <li>
+                        <a href="#">麦田房源
+                </a>
+                    </li>
+                    <li>
+                        <a href="0/soindex.html">移动麦田</a>
+                    </li>
+
+                </ul>
+                <div class="about float_r">
+                    <p class="clearfix" id="islogined">
+                        <a class="know float_r">了解麦田</a>
+                        <a href="../register.html" class="reg float_r"> 注册</a><a href="#" style="cursor:default;">/</a>
+                        <a href="../login.html" class="login float_r">登录</a>
+                    </p>
+                    <h3 class="float_r">购房热线：400-706-1188</h3>
+                </div>
+            </div>
+            <style>
+                .city #mCSB_1_scrollbar_vertical {
+                    display: none;
+                }
+            </style>
+        </header>
+        <input type="hidden" id="currentUrl">
+        <section class="esf_list_search clearfix">
+            <div class="so_search clearfix">
+                <input type="text" class="txt">
+                <input type="button" class="but" id="btSearch">
+                <p id="lastSearchTerm"></p>
+            </div>
+            <ul id="SearchTips" style="top: 37px; left: 0.5px; width: 622px; position: absolute; border: 1px solid #d9d9d9; background-color: white; display: none; z-index: 3;"></ul>
+            <div class="clear"></div>
+        </section>
+        <section class="esf_list clearfix">
+
+            <input type="hidden" value="M0,R0,C0,B0,D0,W0,S0,A0,AB,AE,H0,O0,T0,OR0,L0" id="addClassStr">
+            <div class="list_right">
+                <div class="screening">
+                    <ul>
+                        <li>排序：</li>
+
+                        <li>
+                            <a href="#" class="bg">默认
+                        </a>
+                        </li>
+
+                        <li><a href="#">星级<i class="mai-ico"></i></a></li>
+
+
+                        <li><a href="#">从业年限<i class="mai-ico"></i></a></li>
+
+
+
+                        <li><a href="#">服务客服<i class="mai-ico"></i></a></li>
+
+                    </ul>
+                    <label><a href="#" class="list mai-ico"></a><a href="#" class="map_gay mai-ico"></a></label>
+
+                </div>
+                <p class="search_result">共找到房产顾问<span>5365</span>名</p>
+                <div class="list_wrap">
+                    <ul>
+                        <li class="clearfix">
+                            <a href="#">
+                                <img src="_files/QQ截图20170928003431.jpg" width="208" height="156" alt="">
+                            </a>
+                            <div class="hide_border">
+                            </div>
+                            <div class="list_title">
+                                <div class="the_price">
+                                    <p style="font-size:30px;color:red;">马连洼</p>
+                                </div>
+                                <h1>
+                                    <a href="danei/danei2.html">服务商圈： [海淀] 西北旺 | 马连洼
+                                    </a>
+                                </h1>
+                                <p>
+                                    我的房源：待售(39) 待租(0)
+
+                                </p>
+
+                                <dl class="clearfix">
+                                    <dd class="morel clearfix">
+                                        <mark class="sole">行程播报：我在万科西山庭院带客户看房，买房，卖房，租房靠谱，专业服务...</mark>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <a href="#">
+                                    <img src="_files/QQ截图20170928003431.jpg" width="208" height="156" alt="">
+                                </a>
+                            <div class="hide_border">
+                            </div>
+                            <div class="list_title">
+                                <div class="the_price">
+                                    <p style="font-size:30px;color:red;">马连洼</p>
+                                </div>
+                                <h1>
+                                    <a href="danei/danei2.html">服务商圈： [海淀] 西北旺 | 马连洼
+                                        </a>
+                                </h1>
+                                <p>
+                                    我的房源：待售(39) 待租(0)
+
+                                </p>
+
+                                <dl class="clearfix">
+                                    <dd class="morel clearfix">
+                                        <mark class="sole">行程播报：我在万科西山庭院带客户看房，买房，卖房，租房靠谱，专业服务...</mark>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <a href="#">
+                                        <img src="_files/QQ截图20170928003431.jpg" width="208" height="156" alt="">
+                                    </a>
+                            <div class="hide_border">
+                            </div>
+                            <div class="list_title">
+                                <div class="the_price">
+                                    <p style="font-size:30px;color:red;">马连洼</p>
+                                </div>
+                                <h1>
+                                    <a href="danei/danei2.html">服务商圈： [海淀] 西北旺 | 马连洼
+                                            </a>
+                                </h1>
+                                <p>
+                                    我的房源：待售(39) 待租(0)
+
+                                </p>
+
+                                <dl class="clearfix">
+                                    <dd class="morel clearfix">
+                                        <mark class="sole">行程播报：我在万科西山庭院带客户看房，买房，卖房，租房靠谱，专业服务...</mark>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <a href="#">
+                                            <img src="_files/QQ截图20170928003431.jpg" width="208" height="156" alt="">
+                                        </a>
+                            <div class="hide_border">
+                            </div>
+                            <div class="list_title">
+                                <div class="the_price">
+                                    <p style="font-size:30px;color:red;">马连洼</p>
+                                </div>
+                                <h1>
+                                    <a href="danei/danei2.html">服务商圈： [海淀] 西北旺 | 马连洼
+                                                </a>
+                                </h1>
+                                <p>
+                                    我的房源：待售(39) 待租(0)
+
+                                </p>
+
+                                <dl class="clearfix">
+                                    <dd class="morel clearfix">
+                                        <mark class="sole">行程播报：我在万科西山庭院带客户看房，买房，卖房，租房靠谱，专业服务...</mark>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <a href="#">
+                                                <img src="_files/QQ截图20170928003431.jpg" width="208" height="156" alt="">
+                                            </a>
+                            <div class="hide_border">
+                            </div>
+                            <div class="list_title">
+                                <div class="the_price">
+                                    <p style="font-size:30px;color:red;">马连洼</p>
+                                </div>
+                                <h1>
+                                    <a href="danei/danei2.html">服务商圈： [海淀] 西北旺 | 马连洼
+                                                    </a>
+                                </h1>
+                                <p>
+                                    我的房源：待售(39) 待租(0)
+
+                                </p>
+
+                                <dl class="clearfix">
+                                    <dd class="morel clearfix">
+                                        <mark class="sole">行程播报：我在万科西山庭院带客户看房，买房，卖房，租房靠谱，专业服务...</mark>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <a href="#">
+                                                    <img src="_files/QQ截图20170928003431.jpg" width="208" height="156" alt="">
+                                                </a>
+                            <div class="hide_border">
+                            </div>
+                            <div class="list_title">
+                                <div class="the_price">
+                                    <p style="font-size:30px;color:red;">马连洼</p>
+                                </div>
+                                <h1>
+                                    <a href="danei/danei2.html">服务商圈： [海淀] 西北旺 | 马连洼
+                                                        </a>
+                                </h1>
+                                <p>
+                                    我的房源：待售(39) 待租(0)
+
+                                </p>
+
+                                <dl class="clearfix">
+                                    <dd class="morel clearfix">
+                                        <mark class="sole">行程播报：我在万科西山庭院带客户看房，买房，卖房，租房靠谱，专业服务...</mark>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <a href="#">
+                                                        <img src="_files/QQ截图20170928003431.jpg" width="208" height="156" alt="">
+                                                    </a>
+                            <div class="hide_border">
+                            </div>
+                            <div class="list_title">
+                                <div class="the_price">
+                                    <p style="font-size:30px;color:red;">马连洼</p>
+                                </div>
+                                <h1>
+                                    <a href="danei/danei2.html">服务商圈： [海淀] 西北旺 | 马连洼
+                                                            </a>
+                                </h1>
+                                <p>
+                                    我的房源：待售(39) 待租(0)
+
+                                </p>
+
+                                <dl class="clearfix">
+                                    <dd class="morel clearfix">
+                                        <mark class="sole">行程播报：我在万科西山庭院带客户看房，买房，卖房，租房靠谱，专业服务...</mark>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="paging" class="paging clearfix"> <a class="up_page">首页</a> <a class="up_page"><i class="mai-ico"></i>上一页</a> <a class="on"> 1 </a> <a href="#"> 2 </a>                    <a href="#"> 3 </a> <a href="#"> 4 </a> <a href="#"> 5 </a> <a href="#"> ... </a> <a href="#" class="down_page">下一页<i class="mai-ico"></i></a>
+                    <a href="#1" class="down_page">尾页</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+
+            <div class="footer">
+                <div class="fotcon clearfix">
+                    <div class="fotl float_l">
+
+                        <dl class="clearfix">
+                            <dt class="float_l">北京热门二手房：</dt>
+                            <dd class="float_l clearfix">
+
+                                <a href="#">昌平二手房</a>
+
+                                <a href="#">朝阳二手房</a>
+
+                                <a href="#">东城二手房</a>
+
+                                <a href="#">大兴二手房</a>
+
+                                <a href="#">丰台二手房</a>
+
+                                <a href="#">海淀二手房</a>
+
+                                <a href="#">石景山二手房</a>
+
+                                <a href="#7">西城二手房</a>
+
+                                <a href="#">望京二手房</a>
+
+                                <a href="#">和平里二手房</a>
+
+                                <a href="#">学院路二手房</a>
+
+                                <a href="#">北苑二手房</a>
+
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt class="float_l">北京热门租房：</dt>
+                            <dd class="float_l clearfix">
+
+                                <a href="#">朝阳租房</a>
+
+                                <a href="#">东城租房</a>
+
+                                <a href="#">海淀租房</a>
+
+                                <a href="#">望京租房</a>
+
+                                <a href="#">奥林匹克租房</a>
+
+                                <a href="#">北苑租房</a>
+
+                                <a href="#">CBD租房</a>
+
+                                <a href="#">朝青租房</a>
+
+                                <a href="#">酒仙桥租房</a>
+
+                                <a href="#">南沙滩租房</a>
+
+                                <a href="#">三元桥租房</a>
+
+                                <a href="#">太阳宫租房</a>
+
+                                <a href="#">上地租房</a>
+
+                                <a href="#">清河租房</a>
+
+                            </dd>
+                        </dl>
+
+                        <dl class="clearfix">
+                            <dt class="float_l">北京热门小区：</dt>
+                            <dd class="float_l clearfix">
+
+                                <a href="#">西山华府</a>
+
+                                <a href="#">瞰都国际</a>
+
+                                <a href="#">上北鑫座</a>
+
+                                <a href="#">东湖湾一期</a>
+
+                                <a href="#">亚运新新家园朗月园</a>
+
+                                <a href="#">亚运新新家园静风园</a>
+
+                                <a href="#">北纬40度二期</a>
+
+                                <a href="#">嘉铭桐城D区</a>
+
+                                <a href="#">嘉铭桐城B区</a>
+
+                                <a href="#">富力桃园C区</a>
+
+                                <a href="#">曙光花园观澜国际</a>
+
+                                <a href="#">澳林春天三期</a>
+
+                                <a href="#">融科橄榄城一期</a>
+
+                                <a href="#">金鱼池小区西区</a>
+
+                            </dd>
+                        </dl>
+
+                        <ul class="clearfix">
+                            <li><a href="#">福州二手房</a></li>
+                            <li><a href="#">厦门二手房</a></li>
+                            <li><a href="#">二手房</a></li>
+                            <li><a href="#">小区</a></li>
+                            <li><a href="#">房产顾问</a></li>
+                            <li><a href="#">加入麦田</a></li>
+                            <li><a href="#">关于麦田</a></li>
+                            <li class="last"><a href="#">房产顾问登录</a></li>
+                        </ul>
+                        <p>北京麦田房产经纪有限公司 京ICP备 13011372号-1Copyright©2014 北京麦田房产经纪有限公司保留所有权利</p>
+                    </div>
+                    <div class="fotr float_l">
+                        <p>关注麦田微信<br>随时随地找房</p>
+                        <img src="_files/weixin.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+    </body>
+
+</html>

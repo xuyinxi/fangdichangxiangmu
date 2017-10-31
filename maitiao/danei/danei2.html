@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>麦田</title>
+	<link rel="stylesheet" href="../_files/base.css">
+    
+    <link rel="stylesheet" href="../_files/esf_list.css">
+	<style>
+		p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,pre{
+		  margin:0;
+		  padding:0;
+		  list-style:none;
+		}
+		a{
+		  text-decoration:none;
+		}
+		body{
+		   height:100%;
+		   margin:0 auto;
+		   font:12px "simhei",Arail,Helvetica,sans-serif;
+		   color:#333;
+		   background:#fff;
+ 		 /*background:#f5f5f5;*/
+		}
+		#tbody-top a{
+		  color:#555;
+		}
+		#tbody-top a:hover{
+		  color:#ff4400;
+		}
+
+	    #header {
+		   min-height:200px;
+		   background:pink;
+		}
+
+		#tbody-top{
+			font-size:12px;
+			line-height:3;
+		}
+
+		
+		#tbody-biaoti{
+		   font-size:20px;
+		   font-weight:bold;
+		}
+		#tbody-jiesao>p span{
+		   display:inline-block;
+		   border:1px solid red;
+		   color:red;
+		   padding:3px;
+		   margin:10px 2px;
+		}
+
+		#tbody-xq img{
+		  width:390px;
+		  height:290px;
+		}
+    
+	    #xq-img>div>img{
+		  width:80px;
+		  height:50px;
+		}
+
+		#xq-img>div>a{
+		   display:inline-block;
+		   width:20px;
+		   height:50px;
+		   background-image:url("bottom.png");
+		   background-repeat:no-repeat;
+		   position:relative;
+		   top:15px;
+		   left:5px;
+
+		}
+
+		#xq-img>div>a.a1{
+		   background-image:url("right.png");
+		   
+		}
+        #xq-liebiao{
+	   	  padding-left:20px;
+		  width:450px;
+		  height:350px;
+		}
+
+	    #xq-liebiao>ul{
+			color:#999;
+			width:550px;
+			height:200px;
+		    display:flex;
+			flex-wrap:wrap;
+		}
+
+		#xq-liebiao>ul li.js{
+		    margin-right:20px;
+		    width:200px;
+			height:35px;
+		}
+
+		#xq-liebiao>ul li.js2{
+		   width:550px;
+		   height:35px;
+		}
+
+		#xq-liebiao>ul>li span.cuti{
+		   font-weight:bold;
+		   color:#333;
+		}
+
+		#xq-fp>span.xq-fp-left{
+		   display:inline-block;
+		   width:30px;
+		   height:50px;
+		   font-size:20px;
+		   font-weight:bold;
+		   color:#f56140;
+		}
+
+        #xq-fp>span.xq-fp-right{
+		   display:inline-block;
+		   width:380px;
+		   height:50px;
+		   color:#999;
+		}
+     
+		#xq-liebiao>div>a{
+		   display:block;
+		   width:135px;
+		   height:40px;
+		   background:#f56140;
+		   border-radius:3px;
+		   font-size:18px;
+		   text-align:center;
+		   line-height:40px;
+		   color:#fff;
+		}
+
+		#tbody-jiesao{
+			background:#fff;
+			min-height:200px;
+		}
+
+		#renwu img{
+		   width:50px;
+		   height:60px;
+		   float:left;
+		}
+		#renwu{
+	   	  font-size:10px;
+		  color:#999;
+		  width:300px;
+		}
+		#xq-img{
+		  width:400px;
+		}
+        #tbody-xq{
+		  display:flex;
+		  justify-content:space-between;
+
+		}
+		#xq-fp{
+		  margin-top:20px;
+		}
+		#renwu a{
+		  display:inline-block;
+		  color:#999;
+		}
+		#renwu a.renwu-a1{
+		   width:160px;
+		   height:30px;
+		   background:#f56140;
+		   color:#fff;
+		   font-size:18px;
+		   text-align:center;
+		   line-height:30px;
+		   border-radius:3px;
+		   margin-bottom:5px;
+		}
+		#tbody-daohang li a{
+		   float:left;
+		   color:#666;
+		   font-size:18px;
+		   width:160px;
+		   height:40px;
+		   text-align:center;
+		   border-right:1px solid #e0e0e0;
+		   line-height:45px;
+		}
+		#tbody-daohang li a:hover{
+		   color:#f56140;
+		   font-size:20px;
+		   border-bottom:2px solid red;
+		   height:38px;
+		}
+		#tbody-daohang{
+		   margin-top:15px;
+		   overflow:hidden;
+		   background:#fff;
+		   border-bottom:1px solid #e0e0e0;
+		}
+
+		#tbody-xiangqing div.xq-div1{
+		   border-bottom:1px solid #ccc;
+		   margin-top:15px;
+		}
+		#tbody-xiangqing div p.xq-p1{
+		   font-size:15px;
+		   color:#000;
+		   border-bottom:2px solid #f56140;
+		   width:85px;
+		   height:28px;
+		}
+		#miaosu img{
+		  width:160px;
+		  height:160px;
+		  float:left;
+		}
+		#miaosu{
+		  padding-top:15px;
+		}
+		#ms-wenzi p.wenzi-p1{
+		  width:900px;
+		  font-size:11px;
+		  color:#666;
+		  margin-top:5px;
+		}
+		#ms-wenzi{		  
+		   padding:30px 0 0 200px;
+		}
+
+		#huanjing img{
+			float:left;
+		    width:200px;
+		    height:160px;
+		}
+
+		#hj-ul{
+			display:flex;		
+			  width:800px;
+			  height:35px;
+			  margin:25px 0 40px 240px;
+		}
+		#hj-ul li{
+		   height:35px;
+		   width:120px;
+		   text-align:center;
+		   padding-top:15px;
+		   border:1px solid #fa9759;
+		   border-top:3px solid #fa9759;
+		}
+		.color{
+		  color:#ff4400;
+		}
+		#hj-ul li.daxiao{
+		  width:70px;
+		}
+
+		#huanjing>p{
+		  margin:20px 0 20px 240px;
+		}
+		#huanjing{
+		  padding-top:15px;
+		}
+
+		#tupian img{
+		   width:300px;
+		   height:200px;
+		   margin:15px 3px 0 0;
+		}
+	</style>
+</head>
+<body>
+    <!--头部-->
+	<header class="maitian-header" style="width:100%;">
+			<div class="nav-wrap clearfix">
+				<ul class="fl">
+					<li class="logo"><a href="#"><img src="../_files/logo.png" alt=""></a></li>
+					<li class="city">
+						<div class="filter_select clearfix selectBox">
+							<a href="../../zhuangxiu.html" class="show">北京</a>
+							<div class="filter_sel selectCont mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar" style="overflow: visible;"><div id="mCSB_1" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+								<ul>
+									<li class="active"><a href="#">北京</a></li>
+									<li><a id="fzurlA" href="#">福州</a></li>
+									<li><a id="xmurlA" href="#">厦门</a></li>
+								</ul>
+							</div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
+						</div>
+					</li>
+					<li>
+						<a href="../../zhuangxiu.html" id="matianindex">首页
+						</a>
+					</li>
+					<li>
+						<a href="#" class="bg" id="matianesf">二手房
+						</a>
+					</li>
+					<li>
+						<a href="#" id="matianbs">租房
+						</a>
+					</li>
+					<li>
+						<a href="#" id="matianxq">小区
+						</a>
+					</li>
+					<li>
+						<a href="#" id="matianjjr">房产顾问
+						</a>
+					</li>
+					<li>
+						<a href="#">麦田房源
+						</a>
+					</li>
+					<li>
+						<a href="#">移动麦田</a>
+					</li>
+				   
+				</ul>
+				<div class="about float_r">
+					<p class="clearfix" id="islogined">
+						<a class="know float_r" >了解麦田</a>
+						<a href="../register.html" class="reg float_r"> 注册</a><a href="#" style="cursor:default;">/</a>
+						<a href="../login.html" class="login float_r">登录</a>
+					</p>
+					<h3 class="float_r">购房热线：400-706-1188</h3>
+				</div>
+			</div>
+			<style>
+				.city #mCSB_1_scrollbar_vertical {
+					display: none;
+				}
+			</style>   
+		</header>
+	<div id="t-body" style="margin:0 auto;width:1200px;">
+		<!--面包屑导航-->
+		<div id="tbody-top">
+			<a href="#">福州麦田房产</a> > <a href="#">福州二手房</a> > <a href="#">晋安区	二手房</a> > <a href="#">东二环（塔头路）</a>,<a href="#">火车站二手房</a> > <a href="#">鹤林新城二手房</a>
+		</div>
+		<!--产品介绍-->
+		<div id="tbody-jiesao">
+			<!--主题-->
+			<div id="tbody-biaoti">电梯高层，使用空间大，居家装装修</div>
+			<p><span style="border:1px solid green;color:green;">随时可看</span>
+			   <span>可落外地户</span>
+			   <span>满二</span></p>
+			<div id="tbody-xq">
+			   <!--左侧详情  图片-->
+			   <div id="xq-img">
+			     <img src="2.jpg">
+				 <div>
+				    <a href="#" class="a1"></a>
+					<img src="3.jpg">
+					<img src="4.jpg">
+					<img src="1.jpg">
+					<img src="2.jpg">
+				    <a href="#"></a>
+				 </div>
+			   </div>
+			   <!--中间详情  介绍-->
+			   <div id="xq-liebiao">
+			      <ul>
+				     <li class="js2"><span class="cuti">售价：</span><span>200</span>万元</li>
+				     <li class="js2"><span class="cuti">单价：</span>25207元/㎡(本小区单价排名第17位)</li>
+				     <li class="js"><span class="cuti">面积：</span>79.34㎡</li>
+				     <li class="js"><span class="cuti">朝向：</span>南北</li>
+				     <li class="js"><span class="cuti">区域： </span>晋安区 </li>
+				     <li class="js"><span class="cuti">小区名称： </span>鹤林新城 </li>
+				     <li class="js"><span class="cuti">户型：</span> 2室 2厅 1卫 2阳</li>
+				     <li class="js"><span class="cuti">楼层： </span>高楼层/24层 /电梯 </li>
+				     <li class="js"><span class="cuti">商圈： </span>东二环（塔头路）  火车站 </li>
+				     <li class="js"><span class="cuti">建成年代：</span>2007 年</li>
+				  </ul>
+				  <div id="xq-fp">
+				    <span class="xq-fp-left">房评</span>
+					<span class="xq-fp-right">1.电梯高层，南北通透户型，户型方正。居家装修。 2.社区配套成熟，生活方便。 3.地段好，毗邻东二环泰，出行方便。</span>
+				  </div>
+				  <div>
+				     <a href="#">★关注本房源</a>
+				  </div>
+			   </div>
+			   <!--右侧详情  人物介绍-->
+			   <div id="renwu">
+			        <img src="0.jpg">
+					<p style="color:#f5618d;font-size:17px;">喜洋洋<span style="color:#999;font-size:10px;margin-left:10px;">房产顾问</span></p>
+					<p style="margin-bottom:15px;margin-top:5px;">从业年限2年</p>
+					<p style="color:#555;">服务客户<span style="color:#f5618d;">237</span>位</p>
+					<div style="font-size:15px;margin:5px 0;">★★★☆☆</div>
+					<a href="#" class="renwu-a1">电话联系TA</a>
+					<p>麦田编号：H0000000 <a href="#">举报</a></p>
+			   </div>
+			</div>
+		</div>
+		<!--附加导航-->
+		<ul id="tbody-daohang">
+			<li><a href="#d1">房源描述</a></li>
+			<li><a href="#d2">生活环境</a></li>
+			<li><a href="#d3">房源图片</a></li>
+			<li><a href="#d4">生活圈</a></li>
+			<li><a href="#">我身边的房源</a></li>
+		</ul>
+		<!--产品详情-->
+		<div id="tbody-xiangqing">
+		   <div class="xq-div1" id="d1"><p class="xq-p1"><img src="00.png">房源描述</p></div>
+		   <div id="miaosu">
+		       <div style="border-bottom:1px solid #e8e8e8; height:162px;">
+				<img src="3.jpg">
+				<div id="ms-wenzi">
+			        <h3>江南水都新潮三房，端头户型，南北通透</h3>
+			        <p class="wenzi-p1">江南水都心巢，三房户型在售，永辉在门口，端头户型，南北通透，采光杠杠的，水都小学三房，很适合居家，周五配套齐全，环境也很好；</p>
+				</div>
+			   </div>
+		   </div>
+		   <div class="xq-div1" id="d2"><p class="xq-p1"><img src="00.png">生活环境</p></div>
+		   <div id="huanjing">
+		      <img src="5.jpg" >
+			  <ul id="hj-ul">
+			     <li>
+					<p>小区名称</p>
+					<p class="color" style="font-size:13px;">江南水都八期心巢</p>
+				 </li>
+				 <li>
+				    <p>小区均价</p>
+				    <p class="color">33126元/平</p>
+				 </li>
+				 <li class="daxiao">
+				    <p>小区在售</p>
+				    <p class="color">10套</p>
+				 </li>
+				 <li class="daxiao">
+				    <p>近期成交</p>
+				    <p class="color">150套</p>
+				 </li>
+				 <li class="daxiao">
+				    <p>容积量</p>
+				    <p class="color">2.4</p>
+				 </li>
+				 <li class="daxiao">
+				    <p>绿化率</p>
+				    <p class="color">30%</p>
+				 </li>
+				 <li class="daxiao">
+				    <p>总户数</p>
+				    <p class="color">817户</p>
+				 </li>
+				 <li class="daxiao">
+				    <p>车位情况</p>
+				    <p class="color">总共423车位</p>
+				 </li>
+			  </ul>
+			  <p>安保：监控器|门禁|小区探头|24小时监控|24小时保安|红外线防侵入系统|</p>
+			  <p>地址：区江滨大道路xxx号</p>
+		   </div>
+		   <div class="xq-div1" id="d3" style="margin-top:35px;"><p class="xq-p1"><img src="00.png">房源图片</p></div>
+		   <div id="tupian">
+		       <img src="1.jpg">
+		       <img src="2.jpg">
+		       <img src="3.jpg">
+		       <img src="4.jpg">
+		       <img src="5.jpg">
+		   </div>
+		   <div class="xq-div1"  id="d4"><p class="xq-p1"><img src="00.png">生活圈</p></div>
+		   <div style="padding-top:15px;"><img src="QQ截图20170922101030.jpg" style="width:1100px;height:400px;"></div>
+		   <div class="xq-div1"  id="d4"><p class="xq-p1" style="width:125px;"><img src="00.png">我身边的房源</p></div>
+		   <div style="padding-top:15px;"><img src="001.png" style="width:1100px;height:240px;"></div>
+		</div>
+	</div>
+	<footer style="margin:30px auto 0;width:1200px;height:400px;">
+	    <img src="002.png" style="width:1100px;height:400px;">
+	</footer>
+</body>
+</html>

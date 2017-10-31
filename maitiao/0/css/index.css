@@ -1,0 +1,120 @@
+body,ul,li,p,h1,h2,h3,span{
+  margin:0;
+  padding:0;
+  border:none;
+  list-style:none;
+  color:#fff;
+}
+a{
+  color:#fff;
+  text-decoration:none;
+}
+#main{
+  margin:0 auto;
+}
+#bj{
+   
+
+}
+.bg{
+ background:url(../images/bj.jpg);
+   height:550px;
+
+}
+ .bg-blur {
+            float: left;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            filter: blur(5px);
+        }
+#banner{
+  height:550px;
+  width:100%;
+  margin:0 auto;
+       position: absolute;
+
+}
+#banner .banner-left{
+  position: relative;
+  top:-480px;
+  margin:70px 0 0 200px;
+
+}
+#banner .banner-left .download{
+  margin-top:20px;
+}
+#banner .banner-left .customer{
+  float:left;
+
+}
+
+#banner .banner-left .download span{
+  display:block;
+  width:160px;
+  height:30px;
+  text-align:center;
+  background-color:#DE6555;
+  padding:12px 0;
+  margin:20px;
+  border-radius:5px;
+}
+#banner .banner-left .download img{
+  float:left;
+  margin-top:20px;
+}
+#banner .banner-right img{
+  position:relative;
+  top:-550px;
+  left:190px;
+  
+}
+#footer{
+  position:relative;
+  top:780px;
+  width:1200px;
+  height:400px;
+  margin:0 auto;
+}
+#footer .footer-box{
+  
+  
+}
+#footer .footer-box ul{
+  
+  display:block;
+  display:flex;
+  
+  justify-content:space-between;
+}
+.border-right{
+ border-right:1px solid #CFCFCF;
+}
+#footer .footer-box ul li{
+  width:290px;
+  height:150px;
+ 
+  text-align:center;
+}
+#footer .footer-box ul li img{
+  margin-bottom:20px;
+}
+#footer .footer-box ul li h3{
+  font-weight:normal;
+  color:#ADADAD;
+}
+#footer .footer-box ul li h3:hover{
+  color:#F56140;
+}
+
+
+#footer .footer-box ul li p{
+   color:#999999;
+}
+#footer .footer-box .copyright{
+  color:#CFCCD6;
+  text-align:center;
+  margin-top:50px;
+  font-size:14px;
+}

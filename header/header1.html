@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <style>
+        /*********多种样式**********/
+ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd {
+    margin:0px;
+    padding:0px;
+    border:none;
+    list-style:none;
+}
+input {border:none;}
+.lf   {float:left;}
+.rt  {float:right;}
+.clear  {clear:both;}
+
+a{ color:#FCFDFD; text-decoration: none; }
+
+.font_size18{ font-family:PingFangSC-Regular;font-size:0.18rem; }
+
+.opacity{opacity:0.8;filter:alpha(opacity=80);}
+        /******************/
+        .daohanglan {
+            width: 1200px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius:5px;
+        }
+
+        .daohanglan {
+            background: rgba(110, 101, 92, 0.6);
+            box-shadow: 0 0 18px #333;
+            transition: 3s linear;
+        }
+
+        .daohanglan>ul>li {
+            width: 100px;
+            height: 50px;
+            float: left;
+        }
+
+        .daohanglan>.font-color {
+            width: 200px;
+            height: 50px;
+            float: left;
+
+            color: #FCFDFD;
+        }
+
+        #headers .zhezhaocheng {
+            width: 1200px;
+            height: 700px;
+            overflow: hidden;
+            background: url("../images/01c76858464ec6a8012060c8e7f33d.jpg@2o.jpg")no-repeat;
+            background-size: 1380px 700px;
+        }
+
+        #headers>.zhezhaocheng>.daohanglan {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .daohanglan {
+            background: rgba(110, 101, 92, 0.6);
+            box-shadow: 0 0 18px #333;
+            transition: 3s linear;
+        }
+
+        .daohanglan>ul>li {
+            width: 100px;
+            height: 50px;
+            float: left;
+        }
+
+        .daohanglan>.font-color {
+            width: 200px;
+            height: 50px;
+            float: left;
+
+            color: #FCFDFD;
+        }
+        /*************导航栏的房样式****************/
+
+        .tal {
+            color: #000000;
+            font-size: 18px;
+        }
+
+        .chixian {
+            width: 100px;
+            height: 108px;
+            background-color: #31312F;
+            border-radius: 20px;
+            border-color: transparent;
+            opacity: 0.9;
+            filter: alpha(opacity=90);
+            margin-top: 10px;
+            margin-right: 0;
+            position: relative;
+            top: -9px;
+            left: 0;
+            display: none;
+        }
+
+        .chixian>li>a:hover {
+            font-size: 20px;
+        }
+
+        .chixian>li {
+            height: 35px;
+            line-height: 35px;
+        }
+
+        li.select_top:hover .tal {
+            font-size: 20px;
+            font-family: PingFangSC-Regular;
+            color: #FCFDFD;
+        }
+
+        li.select_top:hover .chixian {
+            display: block;
+        }
+
+        .bg090 {
+            background: rgba(250, 250, 250, 0.90);
+        }
+
+        .w200h44 {
+            width: 200px;
+            height: 44px;
+        }
+
+        .w335h44 {
+            width: 100px;
+            height: 44px;
+        }
+
+        .bnone {
+            border: none;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0);
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="daohanglan">
+        <p class="font-color">麦田在线 <b>400-88885-888</b></p>
+        <ul>
+            <li class="select_top" style="padding-left:100px;">
+                <a href="#" class="tal">二手房</a>
+                <ul class="chixian">
+                    <li><a href="#">学校房</a></li>
+                    <li><a href="#">商圈</a></li>
+                    <li><a href="#">单间房</a></li>
+                </ul>
+            </li>
+            <li class="select_top">
+                <a href="#" class="tal">新房</a>
+                <ul class="chixian">
+                    <li><a href="#">参观新房</a></li>
+                    <li><a href="#">装修新房</a></li>
+                    <li><a href="#">找设计师</a></li>
+                </ul>
+            </li>
+            <li class="select_top">
+                <a href="#" class="tal">租房</a>
+                <ul class="chixian">
+                    <li><a href="#">地区</a></li>
+                    <li><a href="#">价格房</a></li>
+                    <li><a href="#">合租</a></li>
+                </ul>
+            </li>
+            <li class="select_top">
+                <a href="#" class="tal">豪宅</a>
+                <ul class="chixian">
+                    <li><a href="#">装修设计</a></li>
+                    <li><a href="#">装修别墅</a></li>
+                    <li><a href="#">装修单间</a></li>
+                </ul>
+            </li>
+            <li class="select_top">
+                <a href="#" class="tal">小区</a>
+                <ul class="chixian">
+                    <li><a href="#">中介介绍</a></li>
+                    <li><a href="#">个人介绍</a></li>
+                    <li><a href="#">单间</a></li>
+                </ul>
+            </li>
+            <li class="select_top">
+                <a href="#" class="tal">装修设计</a>
+                <ul class="chixian">
+                    <li><a href="#">设计师</a></li>
+                    <li><a href="#">别墅精装</a></li>
+                    <li><a href="#">精美设计</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- 登录注册 -->
+        <div class="logins">
+            <button class="bg090 bnone w335h44">登录</button>
+            <button class="bg090 bnone w335h44">注册</button>
+        </div>
+    </div>
+</body>
+
+</html>

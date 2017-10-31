@@ -1,0 +1,138 @@
+/*****************************先设置外内边距为 0******************************/
+*{
+    margin: 0;
+    padding: 0;
+
+}
+*{
+    font-family:PingFangSC-Regular;
+    font-size:12px;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
+/***********************把大div类居中************************/
+headerst{
+    width: 1200px;
+    margin:0 auto;
+    box-shadow:0 0 6px #333;
+}
+/*********多种样式**********/
+ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd {
+    margin:0px;
+    padding:0px;
+    border:none;
+    list-style:none;
+}
+input {border:none;}
+.lf   {float:left;}
+.rt  {float:right;}
+.clear  {clear:both;}
+
+a{ color:#FCFDFD; text-decoration: none; }
+
+.font_size18{ font-family:PingFangSC-Regular;font-size:0.18rem; }
+
+.opacity{opacity:0.8;filter:alpha(opacity=80);}
+
+
+/*********zhuban**********/
+
+#headerst{
+  width:1200px;
+  height:560px;
+  margin:0 auto;
+  overflow:hidden;
+  background:url("../img/0106de58464ec6a8012060c8b1d9f6.jpg")no-repeat;
+  background-size:1200px 700px;
+  position:relative;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+#main{
+  width: 1200px;
+  height:560px;
+  background:rgba(85,80,76,0.3);
+}
+#main ul{
+  display:flex;
+  justify-content:space-between;
+}
+#main>ul li{
+  width:199px;
+  height:560px;
+  background:rgba(85,80,76,0.6);
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  transition-property:all;
+  transition-duration:0.3s;
+  transition-timing-function:linear;
+  cursor: pointer;
+}
+#main>ul li:hover{
+  background:rgba(85,80,76,0.8);
+}
+#main>ul>li h6{
+  color:white;
+  margin-top:30px;
+  font-family:PingFangSC-Regular;
+  font-size:20px;
+}
+#main>ul>li span{
+  color:white;
+  margin-top:30px;
+  font-size:12px;
+  opacity:0.5;
+}
+#main>ul>li a{
+  margin-top:60px;
+  opacity:0.7;
+}
+
+#main div.down{
+  position:absolute;
+  bottom:40px;
+  left:548px;
+  cursor:pointer;
+}
+
+#main div.rightButtom{
+  position:absolute;
+  top:298px;
+  right:5px;
+}
+#main div.rightButtom ul{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+#main>div.rightButtom li{
+  width:3px;
+  height:15px;
+  margin-bottom:8px;
+  background:#B3B4B9;
+  cursor:pointer;
+}
+#main>div.rightButtom li:hover{
+  background:white;
+}
+#main>.bg-color>li:hover .a_hidden{
+  color:#ff4400;
+}
+#main>.bg-color>li:hover span {
+  font-size:15px;
+  font-weight: bold;
+  color:#ff4400;
+}
+.a_hidden{
+  font-size: 30px;
+}
+.bg-color>li:nth-child(1)>p{
+  font-size: 30px;
+  color:#fff;
+}
+
+
+
+
